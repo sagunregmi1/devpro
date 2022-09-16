@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+   - name: 2nd project
+     copy:
+      src: ./
+      dest: /var/www/html/
